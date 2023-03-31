@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../../App.css'
-import BackgroundImage from '../../assets/images/bg.png'
+import BackgroundImage from '../../assets/images/polygon-scatter-haikei.svg'
 
 export default function LandingPage() {
     return (
@@ -24,6 +24,10 @@ export default function LandingPage() {
 const HeaderStyle = {
     width: "100%",
     height: "100vh",
+    display: 'flex',
+    flexFlow: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
     background: `url(${BackgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
