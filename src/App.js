@@ -20,26 +20,7 @@ export default function App() {
                     <Route path="/forget-password" element={ <ForgetPasswordPage/> } />
                     <Route path="/home" element={ <HomePage/> } />
                 </Routes>
-                <Footer />
             </div>
         </Router>
     )
-}
-
-const Footer = () => {
-    return (
-        <div  style={ FooterStyle }></div>
-    )
-}
-
-const FooterStyle = {
-    background: "#222",
-    fontSize: ".8rem",
-    color: "#fff",
-    position: "absolute",
-    bottom: 0,
-    padding: "1rem",
-    margin: 0,
-    width: "100%",
-    opacity: ".5"
 }
