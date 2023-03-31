@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import '../../App.css'
 
 export default function SignUpPage() {
+    const navigate = useNavigate();
+
     const handleSignupSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
@@ -13,6 +15,7 @@ export default function SignUpPage() {
             email_address: formValues.email,
             conversion_id: formValues.username
         });
+        navigate('/home');
     }
 
     return (
